@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>From Winds With Love </title>
+
+
+  <link rel="shortcut icon" href="https://www.favicon.cc/logo3d/574560.png">
+  <link rel="shortcut icon" href="/PATH_TO_STATIC_FAVICON/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/PATH_TO_ANIMATED_FAVICON/favicon.ico" type="image/x-icon">
+
+
+  <meta property="og:image" content="https://cdn.pixabay.com/photo/2020/11/04/06/22/merry-christmas-5711547_960_720.jpg">
+  <meta property="og:title" content="Merry Christmas">
+  <meta property="og:description" content="Merry Christmas 2024">  
+
+  
+  <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+	<style>
+		* {
+			font-family: 'Patrick Hand', cursive;
+		}
+
+		body {
+			/*크리스마스 컬러 표현*/
+			background-color: #9b070f;
+		}
+
+		.envelope {
+			width: 200px;
+			height: 200px;
+
+			background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+			background-size: cover;
+			background-position: center;
+
+			margin: 200px auto 0px auto;
+
+      /*커서를 포인터로*/
+      cursor:pointer;
+		}
+
+		.envelope-msg {
+			color: white;
+			text-align: center;
+		}
+
+		.letter-close {
+			display: block;
+		}
+
+		.letter-open {
+			display: none;
+		}
+
+		.rtan {
+			background-color: white;
+			width: 200px;
+			height: 200px;
+
+			background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/Webp.net-gifmaker.gif');
+			background-size: 90%;
+			background-position: center top;
+     
+			margin: 100px auto 0px auto;
+
+			border-radius: 100px;
+			border: 5px solid white;
+			box-shadow: 0px 0px 10px 0px white;
+		}
+
+		h1 {
+			color: white;
+			text-align: center;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+
+		.messageBox {
+			background-color: ivory;
+			width: 400px;
+			/* height는 안줘도 글 길이에 맞춰 들어감. */
+
+			margin: auto;
+			color: brown;
+
+			padding: 30px;
+			font-size: 20px;
+			line-height: 30px;
+
+			border-radius: 5px;
+			border: 1px solid white;
+			box-shadow: 0px 0px 10px 0px white;
+		}
+
+		.from {
+			text-align: right;
+			margin-bottom: 0px;
+		}
+    .back-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+
+    background-color: #f1c40f; /* Màu vàng nổi bật */
+    color: #9b070f; /* Màu đỏ Giáng sinh */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #e67e22; /* Màu vàng cam khi hover */
+    box-shadow: 0 0 15px #f1c40f;
+    transform: scale(1.1); /* Hiệu ứng phóng to */
+}
+
+		@media screen and (max-width: 760px) {
+			.messageBox {
+				width: 300px;
+				padding: 20px;
+                                font-size: 17.5px
+			}
+
+			.rtan {
+				width: 150px;
+				height: 150px;
+				margin: 70px auto 0px auto;
+			}
+
+			h1 {
+				font-size: 28px;
+			}
+
+			.envelope {
+				margin: 150px auto 0px auto;
+			}
+		}
+	</style>
+
+	<script>
+		function open_letter() {
+      document.getElementsByClassName("letter-close")[0].style.display = 'none'
+      document.getElementsByClassName("letter-open")[0].style.display = 'block'
+    }
+
+    function go_rtan() {
+      alert('앗, 어떻게 찾았지!');
+      alert('인스타그램이나 구경하세요');
+      window.open("about:blank").location.href ='https://www.facebook.com/minhnhat3082001/'
+    }
+	</script>
+  <script>
+    document.addEventListener('click', function () {
+        const audio = document.getElementById('bgMusic');
+        audio.muted = false; 
+        audio.play(); 
+    });
+</script>
+
+</head>
+
+<body>
+  <audio id="bgMusic" src="giangsinh.mp3" autoplay muted loop>Your browser does not support the audio element.</audio>
+
+
+	<div class="letter-close">
+		<div class="envelope" onclick="open_letter()"></div>
+		<h2 class="envelope-msg">Đừng quên! Click vào lá thư nhé!</h2>
+	</div>
+
+	<div class="letter-open">
+		<div class="rtan" onclick="go_rtan()"></div>
+		<h1>✨ THƯ CHÚC GIÁNG SINH 2024 ✨</h1>
+		<div class="messageBox">
+			Từ Winds, gửi đến tất cả mọi người yêu thương!<br />
+			<br />
+      Vậy là mùa Noel nữa lại về rồi, không biết mọi người đã cảm nhận được không khí Giáng sinh chưa nhỉ? Cây thông đã lên và đèn đã sáng, và chắc chắn là không thể thiếu một lá thư tràn đầy yêu thương như thế này đúng không? 😘<br />
+			<br />
+      🎄 Chúc mọi người một Giáng sinh thật chill!
+Anh mong rằng mọi người sẽ tận hưởng khoảng thời gian ấm áp bên gia đình, bạn bè, và tất nhiên là đừng quên sống thật “nghệ” và thật "chất" trong từng khoảnh khắc nhé. <br />
+			<br />
+			🎁 Chúc mọi người nhận được những “món quà xịn sò” từ cuộc sống!
+Không chỉ là quà tặng đâu, mà là những điều quý giá như sức khỏe, niềm vui và thật nhiều kỷ niệm đáng nhớ. À, nếu có "ai đó" bí mật thì cứ mạnh dạn chúc họ một mùa yêu trọn vẹn luôn nha! 😜<br />
+<br />
+✨ Chúc bạn năm mới tới đây bùng nổ hơn năm cũ!
+2024 sẽ và đang là sân chơi của bạn, hãy toả sáng và làm điều gì đó thật khác biệt. Cứ mạnh dạn mà “phá kén” và để lại dấu ấn!
+
+Nói tóm lại, Giáng sinh không chỉ để ăn bánh, uống cacao nóng hay nghe mấy bài nhạc Noel lặp đi lặp lại, mà còn là lúc để yêu thương thật lòng, sống thật chill và cùng nhau nhìn về một năm mới đầy năng lượng tích cực. <br />
+			<br />
+			Vậy nên, cảm ơn bạn vì đã xuất hiện trong năm qua, và hy vọng sẽ được thấy bạn toả sáng hơn nữa trong năm tới! 🎉 <br />
+      Merry Christmas & Happy New Year nha! <br />
+			
+      <p class="from">🎄  Thân ái chúc vui, Winds 🌟 🎅</p>
+    </div>
+    <<button class="back-button" onclick="window.location.href='Pages/index2.html'">Cây Giáng Sinh!</button>
+
+  </div>
+</body>
+
+</html>
